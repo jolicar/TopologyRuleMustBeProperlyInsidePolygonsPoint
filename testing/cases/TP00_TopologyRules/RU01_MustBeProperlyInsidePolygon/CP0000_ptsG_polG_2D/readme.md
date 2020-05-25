@@ -19,8 +19,8 @@ The final step is the execution of the plan.
 5. Add the **TP00RU01CP0000_pol2D_G.csv** file like a dataset.
 6. Add the **TP00RU01CP0000_pts2D_G.csv** file like a dataset.
 7. Add a new rules parameters on Rules tab.
-8. On those rule parameters identify the primary dataset, the second dataset, the Must Be Properly Inside topology rule and the tolerancy. 
-9  Click on the "Ok" button.
+8. On those rule parameters identify the *primary dataset*, the *second dataset*, the *Must Be Properly Inside topology rule* and the *tolerancy*. 
+9. Click on the "Ok" button.
 10. Click on the "Ok" button to finish the topology plan creation.
 11. Execute the topology plan.
 
