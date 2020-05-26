@@ -7,12 +7,12 @@
 Load two files, **TP00RU01CP0005_pol3D_C.csv** and **TP00RU01CP0005_pts3D_C.csv**. After that create a new topology plan with these layers and the MustBeProperlyInsidePolygon topology rule.
 The final step is the execution of the plan.
 
-### Prerequisites
+### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
 2. Have acces to **TP00RU01CP0005_pol3D_C.csv** and **TP00RU01CP0005_pts3D_C.csv** files.
 
-### Steps
+### Steps...
 
 1. Load the layer **TP00RU01CP0005_pol3D_C.csv** in the view.
 2. Load the layer **TP00RU01CP0005_pts3D_C.csv** in the view.
