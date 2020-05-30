@@ -27,7 +27,7 @@ This test case checks the topology rule when us use correct 2D point datasets an
 
 ### Expected result
 
-The expected results are the *Inspector de errores del Plan de topología* window have one record. The point with ID equals to 2 does  false the rule.
+The expected results are the *Inspector de errores del Plan de topología* window have one record. The point with ID equals to 2 does false the rule, this is out of polygons.
 
 
 ### Bug report
