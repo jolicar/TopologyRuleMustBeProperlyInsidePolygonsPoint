@@ -3,6 +3,7 @@
 * **Rule type:** *Point rule*
 * **Primary dataset:** Point dataset (2D, 2DM, 3D and 3DM) (Multygeometry allowed)
 * **Secundary dataset:** Polygon dataset (2D, 2DM, 3D and 3DM) (Multygeometry allowed)
-* **Brief description:** The rule evaluates the point situation in or out polygons. This point's rule return True when the points falls within the polygon's area, not on the boundary or out of it. The red points does the rule false and the green points give a positive result on the rule.
+* **Brief description:** The rule evaluates the point situation in or out polygons. This point's rule return *True* when the points falls within the polygon's area, not on the boundary or out of it. The red points does the rule false and the green points give a positive result on the rule.
+In 2DM, 3D and 3Dm formats, the Z coordinate or M coordinate are ignored.
 * **Potential fixes actions:** 
 	- **Delete** The delete action removes points features for cases when *Must be properly inside polygons* Topology Rule it is false.
