@@ -9,15 +9,15 @@ This test case checks the topology rule when us use correct 2D point datasets an
 ### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
-2. Have acces to [**TP00RU01CP0001_pol2D_C.csv**]() and [**TP00RU01CP0001_pts2D_C.csv**]() files.
+2. Have acces to [**TP00RU01CP0001_pol2D_I.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0001_2DptsC_2DpolI/TP00RU01CP0001_pol2D_I.csv) and [**TP00RU01CP0001_pts2D_C.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0001_2DptsC_2DpolI/TP00RU01CP0001_pts2D_C.csv) files.
 
 ### Steps...
 
-1. Load the layer **TP00RU01CP0001_pol2D_C.csv** in the view.
+1. Load the layer **TP00RU01CP0001_pol2D_I.csv** in the view.
 2. Load the layer **TP00RU01CP0001_pts2D_C.csv** in the view.
 3. Create a new empty topology plan.
 4. Fill the basic topology plan data.
-5. Add the **TP00RU01CP0001_pol2D_C.csv** file like a dataset.
+5. Add the **TP00RU01CP0001_pol2D_I.csv** file like a dataset.
 6. Add the **TP00RU01CP0001_pts2D_C.csv** file like a dataset.
 7. Add a new rules parameters on Rules tab.
 8. On those rule parameters identify the *primary dataset*, the *second dataset*, the *Must Be Properly Inside topology rule* and the *tolerancy*. 
@@ -27,7 +27,7 @@ This test case checks the topology rule when us use correct 2D point datasets an
 
 ### Expected result
 
-The expected results are the *Inspector de errores del Plan de topología* window have one record. The point with ID equals to two number does the false the rule.
+The expected results are the *Inspector de errores del Plan de topología* window have one record. The point with ID equals to 2 does  false the rule.
 
 
 ### Bug report
