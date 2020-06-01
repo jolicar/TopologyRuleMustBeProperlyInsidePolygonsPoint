@@ -4,7 +4,7 @@
 
 ### Description
 
-This test case checks the topology rule when us use correct 2D datasets. The final result of this is correct too.
+This test case checks the topology rule when us use a correct 2D point dataset and 3D polygon dataset. The final result of this is correct too.
 
 ### Requirements
 
