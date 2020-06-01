@@ -9,7 +9,7 @@ This test case checks the topology rule when us use incorrect 2D point datasets 
 ### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
-2. Have acces to [**TP00RU01CP0002_pol2D_C.csv**]() and [**TP00RU01CP0002_pts2D_I.csv**]() files.
+2. Have acces to [**TP00RU01CP0002_pol2D_C.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0002_2DptsI_2DpolC/TP00RU01CP0002_pol2D_C.csv) and [**TP00RU01CP0002_pts2D_I.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0002_2DptsI_2DpolC/TP00RU01CP0002_pts2D_I.csv) files.
 
 ### Steps...
 
