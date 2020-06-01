@@ -4,7 +4,7 @@
 
 ### Description
 
-This test case checks the topology rule when us use correct 3D datasets. The final result of this is correct too.
+This test case checks the topology rule when us use correct 3DM datasets. The final result of this is correct too.
 
 ### Requirements
 
