@@ -4,7 +4,7 @@
 
 ### Description
 
-This test case checks the topology rule when us use 2D multipoint dataset and 2D polygon dataset. The multipoints are inside of the polygons. The final result of this is correct too.
+This test case checks the topology rule when us use 2D multipoint dataset and 2D polygon dataset. The multipoints are inside of the polygons. The final result of this is correct.
 
 ### Requirements
 
