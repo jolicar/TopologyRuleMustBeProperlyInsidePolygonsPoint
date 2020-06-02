@@ -9,7 +9,7 @@ This test case checks the topology rule when us use only one point of 2D point d
 ### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
-2. Have acces to [**TP00RU01CP0016_Mpol2D_I.csv**]() and [**TP00RU01CP0016_pts2D_C.csv**]() files.
+2. Have acces to [**TP00RU01CP0016_Mpol2D_I.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0016_ptsC_MpolI/TP00RU01CP0016_Mpol2D_I.csv) and [**TP00RU01CP0016_pts2D_C.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0016_ptsC_MpolI/TP00RU01CP0016_pts2D_C.csv) files.
 
 ### Steps...
 
