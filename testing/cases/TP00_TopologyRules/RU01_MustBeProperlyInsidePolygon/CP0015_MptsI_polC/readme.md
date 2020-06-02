@@ -4,12 +4,12 @@
 
 ### Description
 
-This test case checks the topology rule when us use incorrect 2D multipoint dataset and 2D polygon dataset. One geometry of one multipoint are not inside of the polygons. The final result generate a error.
+This test case checks the topology rule when us use incorrect 2D multipoint dataset and 2D polygon dataset. One geometry of one multipoint are not inside of the polygons. The final result generates a error.
 
 ### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
-2. Have acces to [**TP00RU01CP0015_pol2D_C.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/TP00RU01CP0015_Mpts2D_I.csv) and [**TP00RU01CP0015_Mpts2D_I.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/TP00RU01CP0015_Mpts2D_I.csv) files.
+2. Have acces to [**TP00RU01CP0015_pol2D_C.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/TP00RU01CP0015_pol2D_C.csv) and [**TP00RU01CP0015_Mpts2D_I.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/TP00RU01CP0015_Mpts2D_I.csv) files.
 
 ### Steps...
 
