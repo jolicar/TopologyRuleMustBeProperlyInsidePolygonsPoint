@@ -1,6 +1,6 @@
 # P000 Test plan "MustBeProperlyInsidePolygons" topology rule for points.
 
-[TOC html levels=17]
+[TOC html levels=2]
 
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0000_2DptsC_2DpolC/readme.md %}
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0001_2DptsC_2DpolI/readme.md %}
@@ -19,3 +19,4 @@
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0014_MptsC_MpolC/readme.md %}
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/readme.md %}
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0016_ptsC_MpolI/readme.md %}
+
