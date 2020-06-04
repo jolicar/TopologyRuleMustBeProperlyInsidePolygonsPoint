@@ -2,4 +2,4 @@
 
 [TOC html levels=2]
 
-{% include_relative ../testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0000_2DptsC_2DpolC/readme.md %}
+{% include_relative cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0000_2DptsC_2DpolC/readme.md %}
