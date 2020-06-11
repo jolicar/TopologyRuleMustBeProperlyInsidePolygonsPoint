@@ -19,4 +19,6 @@
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0014_MptsC_MpolC/readme.md %}
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0015_MptsI_polC/readme.md %}
 {% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0016_ptsC_MpolI/readme.md %}
+{% include ../cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0017_pts_OUT_Tol/readme.md %}
+
 

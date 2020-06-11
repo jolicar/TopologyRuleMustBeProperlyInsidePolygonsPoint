@@ -20,7 +20,7 @@ class MustBeProperlyInsidePolygonsPointRuleFactory(AbstractTopologyRuleFactory):
             self,
             "MustBeProperlyInsidePolygonsPoint",
             "Must Be Properly Inside Polygons Point Rule JOC",
-            "The rule evaluates the point situation in or out polygons. This point's rule return True when the points falls within the polygon's area, not on the boundary or out of it.",
+            "The rule evaluates the point situation in or out polygons. This point's rule return True when the points falls within the polygon's area, not on the boundary or out of it.\n NOTE 1: When the Tolerance equals zero, the rule does the above. If the tolerance is greater than zero, the point are transformed into polygon. If one point of this new polygon are inside of dataset 2 polygon, the rule return True.\n NOTE 2: The behavior of the rule in multigeometries is simple. For multipoints, if all of their geometries are within the polygon or multipoligon, the rule returns True. For Multipolygon, if one of these geometries has at least one point or multipoint inside, the rule returns True.",
             ListBuilder().add(Geometry.TYPES.POINT).add(Geometry.TYPES.MULTIPOINT).asList(),
             ListBuilder().add(Geometry.TYPES.POLYGON).add(Geometry.TYPES.MULTIPOLYGON).asList()
         )
