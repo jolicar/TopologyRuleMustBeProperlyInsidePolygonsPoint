@@ -49,7 +49,6 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
         )
       ).toString()
     )
-    
     if dataSet2.findFirst(self.expression) != None:
       return True
     return False
@@ -102,9 +101,12 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
         operation=self.contains
       else:
         operation=self.intersectsWithBuffer
+        
       if geomManager.isSubtype(geom.POINT,geometryType1.getType()):
         if mustConvert2D:
+          proj=point1.getProjection()
           point1 = geomManager.createPoint(point1.getX(),point1.getY(), subtype)
+          point1.setProjection(proj)
         if not operation(point1, dataSet2):
           report.addLine(self,
             self.getDataSet1(),
