@@ -27,19 +27,15 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
 
 
   def contains(self, point1, dataSet2):
-    gvsig.logger("containsI")
-    gvsig.logger(point1.convertToWKT())
     if dataSet2.getSpatialIndex() != None:
       for featureReference in dataSet2.query(point1): # change query for getFeaturesThatEnvelopeIntersectsWith
         feature2 = featureReference.getFeature()
         polygon2 = feature2.getDefaultGeometry()
-        gvsig.logger( polygon2.convertToWKT())
         if polygon2.contains(point1):
           return  True
       return False
 
     if self.geomName==None:
-      gvsig.logger( "NO SpatialIndex")
       store2 = dataSet2.getFeatureStore()
       self.geomName = store2.getDefaultFeatureType().getDefaultGeometryAttributeName()
 
@@ -53,7 +49,6 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
         )
       ).toString()
     )
-    gvsig.logger( self.expression.getPhrase())
     
     if dataSet2.findFirst(self.expression) != None:
       return True
@@ -70,6 +65,10 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
         if polygon2.intersects(buffer1):
           return  True
       return False
+
+    if self.geomName==None:
+      store2 = dataSet2.getFeatureStore()
+      self.geomName = store2.getDefaultFeatureType().getDefaultGeometryAttributeName()
 
     self.expression.setPhrase(
       self.expressionBuilder.ifnull(
@@ -103,9 +102,7 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
         operation=self.contains
       else:
         operation=self.intersectsWithBuffer
-      gvsig.logger(str(operation))
       if geomManager.isSubtype(geom.POINT,geometryType1.getType()):
-        gvsig.logger("POINT")
         if mustConvert2D:
           point1 = geomManager.createPoint(point1.getX(),point1.getY(), subtype)
         if not operation(point1, dataSet2):
