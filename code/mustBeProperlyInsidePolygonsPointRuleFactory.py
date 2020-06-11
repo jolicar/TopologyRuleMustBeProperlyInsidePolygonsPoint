@@ -22,7 +22,7 @@ class MustBeProperlyInsidePolygonsPointRuleFactory(AbstractTopologyRuleFactory):
             "Must Be Properly Inside Polygons Point Rule JOC",
             "The rule evaluates the point situation in or out polygons. This point's rule return True when the points falls within the polygon's area, not on the boundary or out of it.",
             ListBuilder().add(Geometry.TYPES.POINT).add(Geometry.TYPES.MULTIPOINT).asList(),
-            ListBuilder().add(Geometry.TYPES.SURFACE).add(Geometry.TYPES.MULTISURFACE).asList()
+            ListBuilder().add(Geometry.TYPES.POLYGON).add(Geometry.TYPES.MULTIPOLYGON).asList()
         )
     
     def createRule(self, plan, dataSet1, dataSet2, tolerance):
