@@ -130,19 +130,19 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
           nPrimitives = point1.getPrimitivesNumber()
           for i in range(0, nPrimitives-1):
             point=point1.getPointAt(i)
-            point = geomManager.createPoint(point.getX(),point.getY(), subtype)
-            multipoint.addPoint(point)
+            nPoint = geomManager.createPoint(point.getX(),point.getY(), subtype)
+            multipoint.addPoint(nPoint)
         else:
           multipoint=point1
-        if not operation(multipoint, theDataSet2):
+        if not operation(multipoint, dataSet2):
           report.addLine(self,
             self.getDataSet1(),
             self.getDataSet2(),
-            point1,
-            point,
+            multipoint,
+            multipoint,
             feature1.getReference(), 
             None,
-            i,
+            -1,
             -1,
             False,
             "The multipoint is not contained by the polygon.",
