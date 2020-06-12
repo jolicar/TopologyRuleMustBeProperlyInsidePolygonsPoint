@@ -123,25 +123,31 @@ class MustBeProperlyInsidePolygonsPointRule(AbstractTopologyRule):
           )
 
       elif geomManager.isSubtype(geom.MULTIPOINT,geometryType1.getType()):
-        nPrimitives = point1.getPrimitivesNumber()
-        for i in range(0, nPrimitives-1):
-          point=point1.getPointAt(i)
-          if mustConvert2D:
+        if mustConvert2D:
+          multipoint=geomManager.createMultiPoint(subtype)
+          proj=point1.getProjection()
+          multipoint.setProjection(proj)
+          nPrimitives = point1.getPrimitivesNumber()
+          for i in range(0, nPrimitives-1):
+            point=point1.getPointAt(i)
             point = geomManager.createPoint(point.getX(),point.getY(), subtype)
-          if not operation(point, theDataSet2):
-            report.addLine(self,
-              self.getDataSet1(),
-              self.getDataSet2(),
-              point1,
-              point,
-              feature1.getReference(), 
-              None,
-              i,
-              -1,
-              False,
-              "The multipoint is not contained by the polygon.",
-              ""
-          )
+            multipoint.addPoint(point)
+        else:
+          multipoint=point1
+        if not operation(multipoint, theDataSet2):
+          report.addLine(self,
+            self.getDataSet1(),
+            self.getDataSet2(),
+            point1,
+            point,
+            feature1.getReference(), 
+            None,
+            i,
+            -1,
+            False,
+            "The multipoint is not contained by the polygon.",
+            ""
+        )
 
       else:
         report.addLine(self,
