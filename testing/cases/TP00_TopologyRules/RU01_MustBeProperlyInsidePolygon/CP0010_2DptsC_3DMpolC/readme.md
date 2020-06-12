@@ -4,7 +4,7 @@
 
 ### Description
 
-This test case checks the topology rule when us use a correct 2D point dataset and 3DM polygon dataset. The final result of this is correct too.
+This test case checks the topology rule when we use a correct 2D point dataset and 3DM polygon dataset. The final result of this is correct too.
 
 ### Requirements
 
@@ -20,14 +20,14 @@ This test case checks the topology rule when us use a correct 2D point dataset a
 5. Add the **TP00RU01CP0010_pol3DM_C.csv** file like a dataset.
 6. Add the **TP00RU01CP0010_pts2D_C.csv** file like a dataset.
 7. Add a new rules parameters on Rules tab.
-8. On those rule parameters identify the *primary dataset*, the *second dataset*, the *Must Be Properly Inside topology rule* and the *tolerancy*. 
+8. On those rule parameters identify the *primary dataset*, the *second dataset*, the *Must Be Properly Inside topology rule* and the *tolerancy*. This tolerancy can be zero or greater.
 9. Click on the "Ok" button.
 10. Click on the "Ok" button to finish the topology plan creation.
 11. Execute the topology plan.
 
 ### Expected result
 
-The expected results are the *Inspector de errores del Plan de topología* window empty. This interface has no records.
+The expected results are the *Inspector de errores del Plan de topologia* window empty. This interface has no records.
 
 
 ### Bug report
