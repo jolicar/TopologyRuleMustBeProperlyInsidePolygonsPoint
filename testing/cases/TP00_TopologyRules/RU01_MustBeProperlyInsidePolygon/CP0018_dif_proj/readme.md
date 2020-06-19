@@ -9,7 +9,7 @@ This test case checks the topology rule when we use two datasets with different 
 ### Requirements
 
 1. Have *gvSIG desktop 2.5.1* and *Topology framework plugin* installed.
-2. Have acces to [**TP00RU01CP0018_pol2D_4326.csv**]() and [**TP00RU01CP0018_pts2D_25830.csv**]() files.
+2. Have acces to [**TP00RU01CP0018_pol2D_4326.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0018_dif_proj/TP00RU01CP0018_pol2D_4326.csv) and [**TP00RU01CP0018_pts2D_25830.csv**](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/testing/cases/TP00_TopologyRules/RU01_MustBeProperlyInsidePolygon/CP0018_dif_proj/TP00RU01CP0018_pts2D_25830.csv) files.
 
 ### Steps...
 
@@ -27,7 +27,7 @@ This test case checks the topology rule when we use two datasets with different 
 
 ### Expected result
 
-The expected results are the *Inspector de errores del Plan de topologia* window empty. This interface has no records.
+An error is generated.
 
 
 ### Bug report
