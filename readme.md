@@ -1,5 +1,5 @@
 # Must be properly inside polygons Topology Rule
-![TopologyRuleMustBeProperlyInsidePolygonsPoint](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/img/TP00R01_img1.png)
+![TopologyRuleMustBeProperlyInsidePolygonsPoint](https://github.com/jolicar/TopologyRuleMustBeProperlyInsidePolygonsPoint/blob/master/img/TP00RU01_img1.png)
 * **Rule type:** *Point rule*
 * **Primary dataset:** Point dataset (2D, 2DM, 3D and 3DM) (*Multygeometry allowed*)
 * **Secundary dataset:** Polygon dataset (2D, 2DM, 3D and 3DM) (*Multygeometry allowed*)
