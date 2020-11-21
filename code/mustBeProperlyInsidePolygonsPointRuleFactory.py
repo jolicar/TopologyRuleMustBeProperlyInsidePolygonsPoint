@@ -9,7 +9,9 @@ uselib.use_plugin("org.gvsig.topology.app.mainplugin")
 from org.gvsig.fmap.geom import Geometry
 from org.gvsig.tools.util import ListBuilder
 from org.gvsig.topology.lib.api import TopologyLocator
-from org.gvsig.topology.lib.spi import AbstractTopologyRuleFactory
+from org.gvsig.topology.lib.spi import AbstractTopologyRuleFactory, RuleResourceLoaderUtils
+
+from java.io import File
 
 from mustBeProperlyInsidePolygonsPointRule import MustBeProperlyInsidePolygonsPointRule
 
@@ -24,7 +26,13 @@ class MustBeProperlyInsidePolygonsPointRuleFactory(AbstractTopologyRuleFactory):
             ListBuilder().add(Geometry.TYPES.POINT).add(Geometry.TYPES.MULTIPOINT).asList(),
             ListBuilder().add(Geometry.TYPES.POLYGON).add(Geometry.TYPES.MULTIPOLYGON).asList()
         )
-    
+
+        pathName = gvsig.getResource(__file__,'MustBeProperlyInsidePolygonsPoint.json')
+        url = File(pathName).toURL()
+        gvsig.logger(str(url))
+        json = RuleResourceLoaderUtils.getRule(url)
+        self.load_from_resource(url, json)
+        
     def createRule(self, plan, dataSet1, dataSet2, tolerance):
         rule = MustBeProperlyInsidePolygonsPointRule(plan, self, tolerance, dataSet1, dataSet2)
         return rule

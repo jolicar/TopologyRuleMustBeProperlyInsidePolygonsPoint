@@ -1,0 +1,17 @@
+{
+    "id": "MustBeProperlyInsidePolygonsPoint",
+    "name": "Must Be Properly Inside Polygons Point GSoC2020",
+    "description": [ 
+        "<img src=\"@@@.png\">\n",     
+        " This point's rule return True when the points falls within the polygon's area, not on the boundary or out of it. The red points does the rule false and the green points give a positive result on the rule. In 2DM, 3D and 3DM formats, the Z coordinate or M coordinate are ignored.\n \n NOTE 1: If the Tolerance equals zero, the rule does as above. If the tolerance is greater than zero, the point are transformed into 'polygon'. If one point of this new polygon are inside of dataset 2 polygon, the rule return True. \n \n NOTE 2: For multipoints, if all of their geometries are within the polygon or multipoligon, the rule returns True. For Multipolygon, if one of these geometries has at least one point or multipoint inside, the rule returns True."	    
+    ],
+    "actions" : {
+        "DeletePointAction": {
+            "name" : "Delete Point Action",
+            "description": [ 
+            "The delete action removes points features for cases when Must be properly inside polygons Topology Rule it is false."
+            ]
+        }
+    }
+}
+
